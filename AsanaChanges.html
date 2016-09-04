@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Asana Changes</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  
+  <body>
+
+    <h1>Please enter your Asana info:</h1>
+
+    <p>
+      Enter your personal access token, the project you want to get tasks for,
+      and the start and end dates of the time frame you are interested in.
+    </p>
+
+    <form>
+      <fieldset>
+        <!-- If there is a particular personal key (likely) and project ID you use repeatedly,
+        add them to the value fields below so you don't have to keep typing them in. -->
+        <input type="text" name="token" placeholder="Personal access token" value=""><br/>
+        <input type="text" name="ID" placeholder="Project ID" value=""><br/>
+        <input type="date" name="start" placeholder="Start date" ><br/>
+        <input type="date" name="end" placeholder="End date"><br/>
+        <button id='button'>Click for results</button>
+      </fieldset>
+    </form>
+
+    <div id="report"></div>
+
+  </body>
+
+</html>
